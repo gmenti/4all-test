@@ -1,0 +1,22 @@
+{
+  "name": "4movies",
+  "version": "1.0.0",
+  "description": "Node.js server of 4movies.",
+  "author": "Giuseppe Menti <mentifg@gmail.com>",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "node ./lib/index.js",
+    "watch": "nodemon --watch lib --exec \" npm run start \"",
+    "lint": "eslint lib"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
