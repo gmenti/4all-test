@@ -19,7 +19,20 @@ npm run lint
 ```
 
 ## Banco de dados
-O script SQL de criação do banco de dados está na raiz do projeto no arquivo "migration.sql".
+O script SQL de criação do banco de dados está na raiz do projeto no arquivo "migration.sql"
+
+As credencias de acesso para conectar ao banco estão no arquivo "./lib/databases.sql':
+```js
+const mysql = knex({
+    client: 'mysql2',
+    connection: {
+      host: '127.0.0.1',
+      user: SEU_USUARIO,
+      password: SUA_SENHA,
+      database: '4movies',
+    },
+});
+```
 
 ## Documentação
 Visite http://docs.gmenti.apiary.io/
