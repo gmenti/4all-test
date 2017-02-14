@@ -1,19 +1,25 @@
-# 4movies
+# 4Movies
 
-> Node.js server of 4movies.
+> 4Movies é uma API simples que permite que os consumidores efetuem locação e devolução de filmes.
 
-## Build Setup
+## Comandos
 
 ``` bash
-# install dependencies
+# instalar dependências
 npm install
  
-# start ./lib/index.js
+# inicia aplicação (./lib/index.js)
 npm run start
  
-# watch changes in files of project and restart.
+# visualiza mudanças nos arquivos do projeto e reinicia aplicação.
 npm run watch
  
-# lint the project source
+# roda o lint no projeto
 npm run lint
 ```
+
+## Banco de dados
+O script SQL de criação do banco de dados está na raiz do projeto no arquivo "migration.sql".
+
+## Documentação
+Visite http://docs.gmenti.apiary.io/
